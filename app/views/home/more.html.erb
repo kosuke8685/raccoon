@@ -1,0 +1,70 @@
+<header>
+  <div class="header-logo">
+    <!--トップページへのリンク-->
+    <a href="/">＜＜TOP</a>
+  </div>
+  <ul class="header-logo">
+    <li>
+      <!--aboutページへのリンク-->
+      <a href="/about">＜＜what?たぬき</a>
+    </li>
+  </ul>
+</header>
+
+
+<div class="about-main">
+  <h2>たぬきをもっと知る</h2>
+</div>
+
+<body>
+
+<!-- 動画1 -->
+<% iframe = content_tag(
+    :iframe,
+    '', # empty body
+    width: 560,
+    height: 315,
+    src: "https://youtu.be/QUMZipRo-wg#{@movie_id}",
+    frameborder: 0,
+    allowfullscreen: true
+) %>
+<%= content_tag(:div, iframe, class: 'youtube-container') %>
+
+<!-- 動画2 -->
+<% iframe = content_tag(
+    :iframe,
+    '', # empty body
+    width: 560,
+    height: 315,
+    src: "https://youtu.be/FBRgeMpADl0#{@movie_id}",
+    frameborder: 0,
+    allowfullscreen: true
+) %>
+<%= content_tag(:div, iframe, class: 'youtube-container') %>
+
+<!-- 動画3 -->
+<% iframe = content_tag(
+    :iframe,
+    '', # empty body
+    width: 560,
+    height: 315,
+    src: "https://youtu.be/ykE_qbPNGkY#{@movie_id}",
+    frameborder: 0,
+    allowfullscreen: true
+) %>
+<%= content_tag(:div, iframe, class: 'youtube-container') %>
+
+
+<!-- 動画4 -->
+<% iframe = content_tag(
+    :iframe,
+    '', # empty body
+    width: 560,
+    height: 315,
+    src: "https://youtu.be/WRzmZI_uJ_8#{@movie_id}",
+    frameborder: 0,
+    allowfullscreen: true
+) %>
+<%= content_tag(:div, iframe, class: 'youtube-container') %>
+
+</body>
